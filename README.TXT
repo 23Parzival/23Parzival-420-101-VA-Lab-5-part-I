@@ -42,3 +42,11 @@ Part II:
 #31 null is returned.
 
 #32 contacts.keySet();
+
+#34 A HashSet and ArrayList are both collections of objects but a set is unordered and doesn't allow duplicates 
+    of the same object. 
+
+#35 A HashSet will return the words randomly and an array list will return them in order of how they were inputted.
+    A HashSet will also ignore duplicates and not return them as opposed to an ArrayList that will.
+
+#36 

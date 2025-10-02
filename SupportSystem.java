@@ -1,3 +1,4 @@
+import java.util.HashMap;
 
 /**
  * This class implements a technical support system. It is the top level class 
