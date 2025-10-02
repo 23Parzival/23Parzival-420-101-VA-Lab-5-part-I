@@ -1,5 +1,5 @@
 
-Answers to Lab 5, Part I.
+Answers to Lab 5, Part I and II.
 
 Part I:
 
@@ -22,3 +22,23 @@ Part I:
 #10 The return type is boolean (true or false).
 
 #12 
+
+Part II:
+
+#24 A HashMap is a class that implements the map interface, it stores data using <K,V>
+    which stands for key value; basically there is a key assigned to each value which gets stored 
+    in specific way. That's where the word hash comes in as it is the way things are stored and dealt with.
+   
+#25 get, put, containsKey, containsValue... Yes the same type can be used for both its parameters.
+
+#26 size()
+
+#28 The previous value contained in that key is replaced by the new one inputted.
+
+#29 The value is added under a different key. 
+
+#30 contacts.containsKey(key);
+
+#31 null is returned.
+
+#32 contacts.keySet();
