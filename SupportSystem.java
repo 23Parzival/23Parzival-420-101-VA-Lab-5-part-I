@@ -45,7 +45,7 @@ public class SupportSystem
             input = reader.getInput();
             
 
-            if(input.equals("bye")) {
+            if(input.contains("bye")) {
                 finished = true;
             }
             else {

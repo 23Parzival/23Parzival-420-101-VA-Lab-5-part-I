@@ -1,6 +1,7 @@
 import java.util.HashSet;
 import java.util.HashMap;
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * The responder class represents a response generator object.
@@ -13,6 +14,7 @@ public class Responder
 {
     private HashMap<String, String> responses;
     private ArrayList<String> defaultResponses;
+    private Random randomGenerator;
     
     /**
      * Construct a Responder - nothing to do
@@ -21,7 +23,7 @@ public class Responder
     {
         responses = new HashMap<>();
         defaultResponses = new ArrayList<>();
-        
+        randomGenerator = new Random();
         fillResponsesMap();
     }
 
@@ -46,6 +48,18 @@ public class Responder
                       "Bugs are common when working with computers, try to figure it out.");
         responses.put("computer",
                       "Computers are awesome.");
+        responses.put("installation", 
+                        """
+                        The installation is really quite straight forward. We have tons of
+                        "wizards that do all the work for you. Have you read the installation
+                        instructions?
+                        """);
+        responses.put("memory", 
+                        """
+                        If you read the system requirements carefully, you will see that the
+                        specified memory requirements are 1.5 giga byte. You really should
+                        upgrade your memory. Anything else you want to know?
+                        """);
     }
     
     public void fillDefaultResponse()
@@ -55,8 +69,8 @@ public class Responder
     
     public String pickDefaultResponse()
     {
-        int size = defaultResponses.size();
-        return defaultResponses.get(size);
+        int index = randomGenerator.nextInt(defaultResponses.size());
+        return defaultResponses.get(index);
     }
 }
 

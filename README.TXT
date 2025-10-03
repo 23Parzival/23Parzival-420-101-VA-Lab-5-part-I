@@ -49,4 +49,6 @@ Part II:
 #35 A HashSet will return the words randomly and an array list will return them in order of how they were inputted.
     A HashSet will also ignore duplicates and not return them as opposed to an ArrayList that will.
 
-#36 
+#36 No.
+
+#40 
