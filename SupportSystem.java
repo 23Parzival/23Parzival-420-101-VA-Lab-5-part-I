@@ -1,3 +1,4 @@
+import java.util.HashSet;
 import java.util.HashMap;
 
 /**
@@ -17,6 +18,7 @@ public class SupportSystem
 {
     private InputReader reader;
     private Responder responder;
+    private HashSet<String> input;
     
     /**
      * Creates a technical support system.
@@ -25,6 +27,7 @@ public class SupportSystem
     {
         reader = new InputReader();
         responder = new Responder();
+        input = new HashSet<>();
     }
 
     /**
@@ -39,13 +42,14 @@ public class SupportSystem
         printWelcome();
 
         while(!finished) {
-            String input = reader.getInput();
+            input = reader.getInput();
+            
 
-            if(input.trim().toLowerCase().equals("bye")) {
+            if(input.equals("bye")) {
                 finished = true;
             }
             else {
-                String response = responder.generateResponse();
+                String response = responder.generateResponse(input);
                 System.out.println(response);
             }
         }
