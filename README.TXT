@@ -51,4 +51,14 @@ Part II:
 
 #36 No.
 
-#40 
+#40 Add a HashMap of the keys of the responses hash map and then add values of different words.
+    When the input is recorded and it is a synonym it will check if it's a synonym before returning 
+    the value.
+
+#41 Change the code into a for loop so that it loops through the words in the input set,
+    when a word is matched to the map it will output its value along with an \n and then output the second
+    response.
+
+#42 Add default responses to the hashmap of responses, they will just have "why", "how"... as keys.
+
+
